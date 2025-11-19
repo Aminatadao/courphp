@@ -1,61 +1,51 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-
-nav ul{
- display: block;
- background-color: rgb(111, 82, 46);
- float: left;
-  width: 100px;          
-  height: 100vh;   
-  
-}
-
-
-nav{
-    
-}
-li{
-   list-style: none;
-   padding: 10px;
-   
-
-}
-
-.photo{
-
-    width: 5%;
+#Apropos{
+    margin: 10px;
     padding: 10px;
 }
 
-h1{
-    font-size: 10px;
-}
+ .para{ 
+ /* déclrer que l'on souhaite utiliser la méthode flex  */
+    display: flex;
 
-a{
-    text-decoration: none;
-}
+    /* pour créer un espace entre les enfants */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 
+    gap: 5%;
 
+    /* lorsque l'on souhaite que les éléments se mettent en colonne */
 
-/*  A PROPOS */
+    /* flex-direction: column; */
+     }
 
-#Apropos p{
+.para1{
 
+    width: 20%;
+    min-width: 400px;
+    text-align: justify;
+    /* margin-bottom: 5%; */
+        }
+ h2{
     text-align: center;
-    /* width: 30%; */
+    margin: 10px;
+    padding: 10px;
+ } 
 
-    height: 30%;
+
+
+
+
+
+
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -65,44 +55,300 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+/* --- NAVBAR --- */
+nav.sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: rgb(111, 82, 46);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1309;
+}
+
+a:hover {
+    background-color: rgb(63, 33, 57);
+    color: rgb(233, 199, 9);
+}
+
+.photo {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- CONTENU --- */
+main {
+    margin-left: 100px; /* EXACTEMENT la largeur de la NAVBAR */
+    padding: 20px;
+}
+
+/* --- FOOTER --- */
 footer {
+    margin-left: 100px; /* pareil pour le footer */
     background-color: #1a1309;
-    color: rgb(237, 225, 225);
+    color: white;
     text-align: center;
     padding: 40px 10% 20px;
+     margin-left: 100px; /* LA largeur de ta navbar */
+    width: calc(100% - 100px); /* IMPORTANT ! Empêche le footer de rétrécir */
+    /* position: fixed; */
+    margin-block: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section compétences */
+ #competences {
     margin-top: 50px;
+    margin-left: 250px;
+    padding: 20px;
 }
 
-/* footer .footer-content h3 {
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.skills-category {
+    flex: 1;               /* chaque catégorie prend la même largeur */
+    min-width: 300px;      /* évite qu’elle soit trop petite */
+}
+
+.skills-category h3 {
+    margin-bottom: 15px;
     font-size: 22px;
+    color: #4b2e15;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f7f4f0;
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: #e7dfd7;
+}
+
+.skill-icon {
+    font-size: 40px;
     margin-bottom: 10px;
+    color: #6f522e;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Contact */
+#contact {
+    margin-top: 40px;
+    margin-left: 250px;
+    padding: 20px;
 }
 
-footer .footer-content p {
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 0 auto 20px;
+#contact h2 {
+    text-align: center;
+    color: #4b2e15;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
-footer .socials {
-    list-style: none;
+/* Conteneur centré */
+.contact-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 0;
+}
+
+/* Formulaire */
+.contact-form {
+    width: 600px;
+    background: #f7f4f0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Champs */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4b2e15;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5c8bc;
+    border-radius: 8px;
+    background: white;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6f522e;
+}
+
+/* Bouton envoyer */
+.btn-contact {
+    width: 100%;
+    padding: 12px;
+    background: #6f522e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background: #4b2e15;
 }
 
 
-footer .socials img:hover {
-    transform: scale(1.2);
-    filter: brightness(1);
+
+
+
+
+
+
+
+
+#formation{
+
+    margin: 20px;
+    padding: 20px;
 }
 
-.footer-bottom {
-    margin-top: 25px;
-    font-size: 14px;
-    
-    padding-top: 10px;
-    opacity: 0.9;
-} */
+.formation-container{
+
+/* déclrer que l'on souhaite utiliser la méthode flex  */
+    display: flex;
+
+    /* pour créer un espace entre les enfants */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+
+    gap: 5%;
+
+    /* lorsque l'on souhaite que les éléments se mettent en colonne */
+
+    /* flex-direction: column; */
+
+
+
+}
+
+
+.formation-item{
+
+ width: 20%;
+    min-width: 400px;
+    text-align: justify;
+    /* margin-bottom: 5%; */
+ }
+
+
+ #Expérience:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+      }
+ #Apropos:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+}
+
+#Contact:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+}
+#Compétences:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+}
+
+#Formation:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+}
+#Projets:hover{
+    background-color:rgb(213, 225, 225);
+    color: black;
+}

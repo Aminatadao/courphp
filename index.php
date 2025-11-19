@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- FONT AWESOME (à mettre dans le <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portefolio</title>
 </head>
@@ -11,28 +14,28 @@
 <header>
 
  
-  <nav>
+  <nav class="sidebar">
     <div class="ent"> 
     <img src="img/photo.png" alt="photo identité" class="photo">
     <h1>AMINATA DAO<br>DEVELOPPEUSE WEB</h1> 
      </div>
     <ul> 
-     <li> <a href=""> À propos</a></li>
-     <li><a href="">Expérience</a></li>
-     <li><a href="">Formation</a></li>
-     <li><a href="">Compétences</a></li>
-     <li><a href="">Projets</a></li>
-     <li><a href="">Contact</a></li>
+     <li> <a href="#Apropos"> À propos</a></li>
+     <li><a href="#Expérience">Expérience</a></li>
+     <li><a href="#Formation">Formation</a></li>
+     <li><a href="#Compétences">Compétences</a></li>
+     <li><a href="#Projets">Projets</a></li>
+     <li><a href="#Contact">Contact</a></li>
     </ul>
  </nav>
 
 </header>
 
- <body>
-
+ <main>  
 
                             <!-- SECTION A PROPOS -->
     <section id="Apropos">
+         <h2>À propos</h2>
     <p>
       Étudiante en Bachelor 3 Développement Web et Applicatif à l'IESIG, je suis passionnée par la création d'expériences numériques modernes.
       Je maîtrise le HTML et le CSS, et je poursuis actuellement mon apprentissage de JavaScript et PHP.
@@ -45,17 +48,93 @@
 
                         <!--  SECTION EXPERIENCE -->
 
-      <section id="experience">
+      <section id="Expérience">
 
 
+                <h2>Expériences</h2>
+                <div class="para">
+                    <div class="para1"> 
+                        <p> <b> Développeur Web - Plateforme de QCM en PHP/MySQL | 2024 - 2025 </b> <br>
+                        
+                       Conception et développement d'une plateforme éducative permettant la création, la gestion et la passation de QCM.<br>
+                      • Authentification des utilisateurs avec gestion des rôles (enseignants / élèves).<br>
+                      • Création, modification et suppression de QCM, questions et réponses.<br>
+                      • Soumission des réponses par les élèves et calcul automatique des scores.<br>
+                      • Visualisation des résultats et statistiques d'évaluation.<br>
+                      • Analyse des besoins et rédaction du cahier des charges.<br>
+                      • Modélisation de la base de données et réalisation des maquettes.<br>
+                      • Tests fonctionnels, mise en production et maintenance continue.<br>
+                        Technologies : PHP (PDO), MySQL, HTML, CSS, JavaScript.<br>
 
+                         </p>
+                    </div>
+                    <div class="para1"> 
+                      
+                           <p><b>  Développeur Web - Site E-commerce | 2024 - 2025</b> <br>
+
+                         Développement complet d'un site e-commerce avec gestion dynamique des produits et commandes.<br>
+                        • Conception et modélisation de la base de données (produits, utilisateurs, catégories, commandes).<br>
+                        • Interface d'administration pour l'ajout, la modification et la suppression des produits.<br>
+                        • Système d'authentification et gestion des comptes utilisateurs.<br>
+                        • Mise en place d'un panier dynamique et d'un système de commandes.<br>
+                        • Intégration du design responsive (violet, blanc, gris).<br>
+                        • Optimisation du code et séparation des fichiers (header, footer, fonctions).<br>
+                         Technologies : PHP, MySQL, HTML, CSS, JavaScript. <br>
+                        </p>
+                    </div>
+                    <div class="para1"> 
+                        <p><b> Développeur Web - Reproduction de l'interface Microsoft | 02/2025 - 03/2025</b> <br>
+                           
+
+                          Création d'une interface web inspirée de l'environnement Windows, simulant l'écran d'accueil d'un PC.<br>
+                        • Système de connexion sécurisé par mot de passe.<br>
+                        • Développement de deux applications natives :<br>
+                        - Calculatrice : opérations arithmétiques simples.<br>
+                        - Gestionnaire de tâches : ajout, validation (barré au clic) et suppression (double-clic).<br>
+                        • Reproduction fidèle de l'UI Windows (icônes, fenêtres, interactions).<br>
+                         Technologies : HTML, CSS, JavaScript.<br>
+                        </p>
+                    </div>
 
 
       </section>
 
-                            <!-- section competence -->
 
-<section id="competence">
+
+                         <!-- formation -->
+
+
+    <section id="Formation">
+             <h2>formation</h2>
+
+       <div class="formation-container">
+
+        <div class="formation-item">
+            <h3>Bachelor 2 - Développement Web et Applicatif</h3>
+            <h4>IESIG - Paris | 2024 - 2025</h4>
+            <p>Développement front-end et back-end, conception d'applications web, projets PHP, JavaScript et MySQL.</p>
+        </div>
+
+        <div class="formation-item">
+            <h3>Bachelor 1 - Développement Web et Applicatif</h3>
+            <h4>IESIG - Paris | 2023 - 2024</h4>
+            <p>Fondamentaux du développement web, interfaces HTML/CSS, initiation à la programmation et aux bases de données.</p>
+        </div>
+
+
+
+        <div class="formation-item">
+    <h3>Parcours en Méthodes Informatiques Appliquées à la Gestion des Entreprises (MIAGE)</h3>
+    <h4>UIA - Institut Universitaire d'Abidjan | 2022 - 2023</h4>
+    <p>Introduction aux concepts informatiques appliqués à la gestion : analyse, outils numériques, logique de programmation et bases des systèmes d'information.
+    Formation suivie avant mon orientation vers le développement web à l'IESIG.</p>
+</div>
+
+    </div>
+
+     
+
+
 
 
 
@@ -64,27 +143,244 @@
 
 
 
-                               <!-- section projets -->
-
-  <section  id="projets">
 
 
 
 
 
-             </section>
+
+
+
+
+                            <!-- section projets -->
+
+<section id="Projets">
+             <h2>projets</h2>
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+<section id="Compétences">
+    <h2>Compétences</h2>
+
+    <div class="skills-container">
+
+        <!-- Compétences Techniques -->
+        <div class="skills-category">
+            <h3>Compétences Techniques</h3>
+            <div class="skills-group">
+
+                <div class="skill-item">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h4>HTML</h4>
+                    <p>Structure de pages web modernes et accessibles.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h4>CSS</h4>
+                    <p>Stylisation avancée et responsive design.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h4>JavaScript</h4>
+                    <p>Interactions dynamiques et fonctionnalités web.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-php skill-icon"></i>
+                    <h4>PHP</h4>
+                    <p>Développement back-end et logique applicative.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h4>MySQL</h4>
+                    <p>Création, gestion et optimisation de bases de données.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-bootstrap skill-icon"></i>
+                    <h4>Bootstrap</h4>
+                    <p>Intégration rapide d'interfaces modernes et responsive.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h4>Symfony</h4>
+                    <p>Développement structuré MVC et API sécurisées.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Outils & Méthodologies -->
+        <div class="skills-category">
+            <h3>Outils & Méthodologies</h3>
+            <div class="skills-group">
+
+                <div class="skill-item">
+                    <i class="fab fa-figma skill-icon"></i>
+                    <h4>Figma</h4>
+                    <p>Maquettes, prototypes et design UI/UX.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-wordpress skill-icon"></i>
+                    <h4>WordPress</h4>
+                    <p>Création de sites, thèmes et personnalisation.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h4>Git</h4>
+                    <p>Gestion de versions et travail collaboratif.</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-project-diagram skill-icon"></i>
+                    <h4>UML / Merise</h4>
+                    <p>Analyse, modélisation et conception de systèmes.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Compétences Professionnelles -->
+        <div class="skills-category">
+            <h3>Compétences Professionnelles</h3>
+
+            <div class="skills-group">  
+                <div class="skill-item">
+                    <i class="fas fa-user-check skill-icon"></i>
+                    <p>Organisation</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-users skill-icon"></i>
+                    <p>Travail en équipe</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <p>Analyse & Résolution de problèmes</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-sync-alt skill-icon"></i>
+                    <p>Adaptabilité</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-tasks skill-icon"></i>
+                    <p>Gestion des priorités</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-search skill-icon"></i>
+                    <p>Rigueur</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-comment-dots skill-icon"></i>
+                    <p>Communication</p>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fas fa-bolt skill-icon"></i>
+                    <p>Apprentissage rapide</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
 
              <!-- section contact -->
 
-           <section id="contact">
+        <section id="Contact">
+    <h2>Contact</h2>
 
+    <div class="contact-container">
 
-           </section>   
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" placeholder="votremail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Objet</label>
+                <input type="text" id="subject" placeholder="Objet du message" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-contact">Envoyer</button>
+
+        </form>
+
+    </div>
+</section>
+ 
   
 
 
 
 <!-- footer -->
+
+</main>
 <footer>
     <div class="footer-content">
         <h3>Mon Portfolio</h3>
@@ -102,6 +398,7 @@
         <p>&copy; 2025 - Mon Portfolio | Réalisé avec passion par AMINATA DAO</p>
     </div>
 </footer>
+
 
 
 
