@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<!-- FONT AWESOME (à mettre dans le <head>) -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portefolio</title>
@@ -17,7 +17,7 @@
   <nav class="sidebar">
     <div class="ent"> 
     <img src="img/photo.png" alt="photo identité" class="photo">
-    <h1>AMINATA DAO<br>DEVELOPPEUSE WEB</h1> 
+    <h1>AMINATA DAO<br>DEVELOPPEUSE WEB  </h1> 
      </div>
     <ul> 
      <li> <a href="#Apropos"> À propos</a></li>
@@ -30,10 +30,12 @@
  </nav>
 
 </header>
-
- <main>  
+  
+ <main class="mainContainer" >  
 
                             <!-- SECTION A PROPOS -->
+
+    
     <section id="Apropos">
          <h2>À propos</h2>
     <p>
@@ -141,37 +143,47 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
                             <!-- section projets -->
 
 <section id="Projets">
              <h2>projets</h2>
 
+             
+
+              <div class="projects-flex">
+
+        <div class="project-card">
+            <img src="img/Capture QCM.png" alt="Projet QCM">
+            <p>Plateforme de QCM</p> 
+        </div>
+           
+            
+    <h4 class="project-title"></h4>
+        
+        <div class="project-card">
+            <img src="img/Capture windows.png" alt="Interface Microsoft">
+             <p>Interface Microsoft</p> 
+        </div>
+
+     
+           
+    <h4 class="project-title"></h4>
 
 
+        <div class="project-card">
+            <img src="img/.png" alt="Site E-commerce">
+               <p>Site E-commerce</p> 
+        </div>
+         
+            
+          <h4 class="project-title"></h4>
 
 
-
+              </div>
 
 
 
     </section>
-
-
-
-
-
-
 
 
 
@@ -262,117 +274,43 @@
             </div>
         </div>
 
-        <!-- Compétences Professionnelles -->
-        <div class="skills-category">
-            <h3>Compétences Professionnelles</h3>
-
-            <div class="skills-group">  
-                <div class="skill-item">
-                    <i class="fas fa-user-check skill-icon"></i>
-                    <p>Organisation</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-users skill-icon"></i>
-                    <p>Travail en équipe</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-brain skill-icon"></i>
-                    <p>Analyse & Résolution de problèmes</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-sync-alt skill-icon"></i>
-                    <p>Adaptabilité</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-tasks skill-icon"></i>
-                    <p>Gestion des priorités</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-search skill-icon"></i>
-                    <p>Rigueur</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-comment-dots skill-icon"></i>
-                    <p>Communication</p>
-                </div>
-
-                <div class="skill-item">
-                    <i class="fas fa-bolt skill-icon"></i>
-                    <p>Apprentissage rapide</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             
+        </section>
 
              <!-- section contact -->
 
         <section id="Contact">
-    <h2>Contact</h2>
+          <h2>Contact</h2>
 
-    <div class="contact-container">
+                    <div class="contact-container">
 
-        <form class="contact-form">
+                           <form class="contact-form"  action="https://formspree.io/f/xrbnkavy" method="post" >
 
-            <div class="form-group">
-                <label for="name">Nom complet</label>
-                <input type="text" id="name" placeholder="Votre nom" required>
-            </div>
+                                <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                   <input type="text" id="name" placeholder="Votre nom" required>
+                               </div>
 
-            <div class="form-group">
-                <label for="email">Adresse e-mail</label>
-                <input type="email" id="email" placeholder="votremail@gmail.com" required>
-            </div>
+                               <div class="form-group">
+                                   <label for="email">Adresse e-mail</label>
+                                   <input type="email" id="email" placeholder="votremail@gmail.com" required>
+                               </div>
 
-            <div class="form-group">
-                <label for="subject">Objet</label>
-                <input type="text" id="subject" placeholder="Objet du message" required>
-            </div>
+                               <div class="form-group">
+                                   <label for="subject">Objet</label>
+                                   <input type="text" id="subject" placeholder="Objet du message" required>
+                               </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
-            </div>
+                              <div class="form-group">
+                                   <label for="message">Message</label>
+                                  <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                              </div>
 
-            <button type="submit" class="btn-contact">Envoyer</button>
+                                 <button type="submit" class="btn-contact">Envoyer</button>
 
-        </form>
+                            </form>
 
-    </div>
-</section>
+                       </div>
+         </section>
  
   
 
@@ -381,16 +319,17 @@
 <!-- footer -->
 
 </main>
+
 <footer>
     <div class="footer-content">
         <h3>Mon Portfolio</h3>
-        <p>Étudiante en Bachelor 3 Développement Web et Applicatif à l’IESIG.  
+        <p>Étudiante en Bachelor 3 Développement Web et Applicatif à l'IESIG.  
         Passionnée par le web et motivée à créer des solutions modernes et efficaces.</p>
 
         <ul class="socials">
             
-            <li><a href="#" title="GitHub"><img src="assets/img/github.png" alt="GitHub"></a></li>
-            <li><a href="#" title="Email"><img src="assets/img/mail.png" alt="Mail"></a></li>
+            <li><a href="https://github.com/Aminatadao" title="GitHub"><img src="./img/github.png" alt="GitHub" width="3%" ></a></li>
+            <li><a href="mailto:aminata.dao12@outlook.fr" title="Email"><img src="./img/add.png" alt="Mail" width="5%"></a></li>
         </ul>
     </div>
 

@@ -14,9 +14,7 @@
 
     gap: 5%;
 
-    /* lorsque l'on souhaite que les éléments se mettent en colonne */
-
-    /* flex-direction: column; */
+    
      }
 
 .para1{
@@ -54,6 +52,8 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+     padding: 0;
+    box-sizing: border-box;
 }
 /* --- NAVBAR --- */
 nav.sidebar {
@@ -63,7 +63,7 @@ nav.sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 li {
@@ -89,26 +89,26 @@ a:hover {
 
 h1 {
     font-size: 12px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    padding: 10px;
+    margin-left: 5px;
 }
 
 /* --- CONTENU --- */
 main {
-    margin-left: 100px; /* EXACTEMENT la largeur de la NAVBAR */
+    margin-left:2px 5px; 
     padding: 20px;
 }
 
 /* --- FOOTER --- */
 footer {
-    margin-left: 100px; /* pareil pour le footer */
+    margin-left: 10px; 
     background-color: #1a1309;
-    color: white;
+    color: rgb(231, 229, 213);
     text-align: center;
     padding: 40px 10% 20px;
-     margin-left: 100px; /* LA largeur de ta navbar */
-    width: calc(100% - 100px); /* IMPORTANT ! Empêche le footer de rétrécir */
+     /* margin-left: 100px;  
+    width: calc(100% - 100px);
     /* position: fixed; */
     margin-block: 200px;
 }
@@ -118,28 +118,12 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Section compétences */
  #competences {
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 5px;
     padding: 20px;
+    
 }
 
 .skills-container {
@@ -150,8 +134,8 @@ footer {
 }
 
 .skills-category {
-    flex: 1;               /* chaque catégorie prend la même largeur */
-    min-width: 300px;      /* évite qu’elle soit trop petite */
+    flex: 1;               
+    min-width: 300px;    
 }
 
 .skills-category h3 {
@@ -189,28 +173,13 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Section Contact */
 #contact {
-    margin-top: 40px;
-    margin-left: 250px;
+    margin-top: 10px;
+    margin-left:5pX;
     padding: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 #contact h2 {
@@ -292,8 +261,8 @@ footer {
 
 #formation{
 
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .formation-container{
@@ -351,4 +320,71 @@ footer {
 #Projets:hover{
     background-color:rgb(213, 225, 225);
     color: black;
+}
+
+
+.mainContainer{
+    background-image: url(img/pexels-cottonbro-5184949.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+#projets {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.projects-flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap; 
+
+}
+
+.project-card {
+   
+    width: 30%;
+    min-width: 400px;
+    /* box-shadow: 0 5px 12px rgba(0,0,0,0.1); */
+    transition: 0.3s;
+}
+
+
+
+ .footer-content   p {
+    padding: 15px;
+    font-weight: 600;
+    color: #eee3da;
+    text-align: center;
+}
+
+ .footer-bottom P{
+      padding: 15px;
+    font-weight: 600;
+    color: #eee3da;
+    text-align: center;
+ }
+
+.project-card:hover {
+    transform: translateY(-8px);
 }
