@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Portefolio</title>
 </head>
+
 <body>
 
 <header>
 
- 
+
+
   <nav class="sidebar">
+
     <div class="ent"> 
-    <img src="img/photo.png" alt="photo identité" class="photo">
+    <img src="img/image.png" alt="photo identité" class="photo">
     <h1>AMINATA DAO<br>DEVELOPPEUSE WEB  </h1> 
      </div>
-    <ul> 
+         
+    <ul class="reveal">  
      <li> <a href="#Apropos"> À propos</a></li>
      <li><a href="#Expérience">Expérience</a></li>
      <li><a href="#Formation">Formation</a></li>
@@ -31,14 +35,14 @@
 
 </header>
   
- <main class="mainContainer" >  
+ <main  >  
 
                             <!-- SECTION A PROPOS -->
 
     
-    <section id="Apropos">
+    <section id="Apropos"    class="animate">
          <h2>À propos</h2>
-    <p>
+    <p class="reveal">
       Étudiante en Bachelor 3 Développement Web et Applicatif à l'IESIG, je suis passionnée par la création d'expériences numériques modernes.
       Je maîtrise le HTML et le CSS, et je poursuis actuellement mon apprentissage de JavaScript et PHP.
       Curieuse, motivée et volontaire, je m'investis pleinement dans chaque projet afin d'allier esthétique, performance et fonctionnalité.
@@ -50,12 +54,12 @@
 
                         <!--  SECTION EXPERIENC -->
 
-      <section id="Expérience">
+      <section id="Expérience"    class="animate">
 
 
                 <h2>Expériences</h2>
                 <div class="para">
-                    <div class="para1"> 
+                    <div class="para1  reveal"> 
                         <p> <b> Développeur Web - Plateforme de QCM en PHP/MySQL | 2024 - 2025 </b> <br>
                         
                        Conception et développement d'une plateforme éducative permettant la création, la gestion et la passation de QCM.<br>
@@ -70,7 +74,7 @@
 
                          </p>
                     </div>
-                    <div class="para1"> 
+                    <div class="para1 reveal"> 
                       
                            <p><b>  Développeur Web - Site E-commerce | 2024 - 2025</b> <br>
 
@@ -84,7 +88,7 @@
                          Technologies : PHP, MySQL, HTML, CSS, JavaScript. <br>
                         </p>
                     </div>
-                    <div class="para1"> 
+                    <div class="para1 reveal"> 
                         <p><b> Développeur Web - Reproduction de l'interface Microsoft | 02/2025 - 03/2025</b> <br>
                            
 
@@ -106,18 +110,18 @@
                          <!-- formation -->
 
 
-    <section id="Formation">
+    <section id="Formation"     class="animate">
              <h2>formation</h2>
 
        <div class="formation-container">
 
-        <div class="formation-item">
+        <div class="formation-item  reveal">
             <h3>Bachelor 2 - Développement Web et Applicatif</h3>
             <h4>IESIG - Paris | 2024 - 2025</h4>
             <p>Développement front-end et back-end, conception d'applications web, projets PHP, JavaScript et MySQL.</p>
         </div>
 
-        <div class="formation-item">
+        <div class="formation-item  reveal">
             <h3>Bachelor 1 - Développement Web et Applicatif</h3>
             <h4>IESIG - Paris | 2023 - 2024</h4>
             <p>Fondamentaux du développement web, interfaces HTML/CSS, initiation à la programmation et aux bases de données.</p>
@@ -125,7 +129,7 @@
 
 
 
-        <div class="formation-item">
+        <div class="formation-item  reveal">
     <h3>Parcours en Méthodes Informatiques Appliquées à la Gestion des Entreprises (MIAGE)</h3>
     <h4>UIA - Institut Universitaire d'Abidjan | 2022 - 2023</h4>
     <p>Introduction aux concepts informatiques appliqués à la gestion : analyse, outils numériques, logique de programmation et bases des systèmes d'information.
@@ -145,39 +149,39 @@
 
                             <!-- section projets -->
 
-<section id="Projets">
+<section id="Projets"    class="animate">
              <h2>projets</h2>
 
              
 
               <div class="projects-flex">
 
-        <div class="project-card">
+        <div class="project-card reveal">
             <img src="img/Capture QCM.png" alt="Projet QCM">
             <p>Plateforme de QCM</p> 
         </div>
            
             
-    <h4 class="project-title"></h4>
+    
         
-        <div class="project-card">
+        <div class="project-card  reveal">
             <img src="img/Capture windows.png" alt="Interface Microsoft">
              <p>Interface Microsoft</p> 
         </div>
 
      
            
-    <h4 class="project-title"></h4>
 
 
-        <div class="project-card">
-            <img src="img/.png" alt="Site E-commerce">
+
+        <div class="project-card reveal">
+            <img src="img/Capture d'écran.png" alt="Site E-commerce">
                <p>Site E-commerce</p> 
         </div>
          
             
-          <h4 class="project-title"></h4>
-
+        
+         
 
               </div>
 
@@ -187,8 +191,9 @@
 
 
 
-<section id="Compétences">
+<section id="Compétences"    class="animate">
     <h2>Compétences</h2>
+      <div class="Compétences-flex">  
 
     <div class="skills-container">
 
@@ -197,43 +202,43 @@
             <h3>Compétences Techniques</h3>
             <div class="skills-group">
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-html5 skill-icon"></i>
                     <h4>HTML</h4>
                     <p>Structure de pages web modernes et accessibles.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-css3-alt skill-icon"></i>
                     <h4>CSS</h4>
                     <p>Stylisation avancée et responsive design.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-js skill-icon"></i>
                     <h4>JavaScript</h4>
                     <p>Interactions dynamiques et fonctionnalités web.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-php skill-icon"></i>
                     <h4>PHP</h4>
                     <p>Développement back-end et logique applicative.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal ">
                     <i class="fas fa-database skill-icon"></i>
                     <h4>MySQL</h4>
                     <p>Création, gestion et optimisation de bases de données.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-bootstrap skill-icon"></i>
                     <h4>Bootstrap</h4>
                     <p>Intégration rapide d'interfaces modernes et responsive.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fas fa-code skill-icon"></i>
                     <h4>Symfony</h4>
                     <p>Développement structuré MVC et API sécurisées.</p>
@@ -247,25 +252,25 @@
             <h3>Outils & Méthodologies</h3>
             <div class="skills-group">
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-figma skill-icon"></i>
                     <h4>Figma</h4>
                     <p>Maquettes, prototypes et design UI/UX.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-wordpress skill-icon"></i>
                     <h4>WordPress</h4>
                     <p>Création de sites, thèmes et personnalisation.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fab fa-git-alt skill-icon"></i>
                     <h4>Git</h4>
                     <p>Gestion de versions et travail collaboratif.</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <i class="fas fa-project-diagram skill-icon"></i>
                     <h4>UML / Merise</h4>
                     <p>Analyse, modélisation et conception de systèmes.</p>
@@ -278,12 +283,12 @@
 
              <!-- section contact -->
 
-        <section id="Contact">
+        <section id="Contact"   class="animate">
           <h2>Contact</h2>
 
                     <div class="contact-container">
 
-                           <form class="contact-form"  action="https://formspree.io/f/xrbnkavy" method="post" >
+                           <form class="contact-form reveal"  action="https://formsubmit.co/aminata.dao12@outlook.fr" method="post" >
 
                                 <div class="form-group">
                                 <label for="name">Nom complet</label>
@@ -310,6 +315,8 @@
                             </form>
 
                        </div>
+
+                        </div>
          </section>
  
   
@@ -329,8 +336,9 @@
         <ul class="socials">
             
             <li><a href="https://github.com/Aminatadao" title="GitHub"><img src="./img/github.png" alt="GitHub" width="3%" ></a></li>
-            <li><a href="mailto:aminata.dao12@outlook.fr" title="Email"><img src="./img/add.png" alt="Mail" width="5%"></a></li>
+            <li><a href="mailto:aminata.dao12@outlook.fr" title="Email"><img src="./img/add.png" alt="Mail" width="4%"></a></li>
         </ul>
+
     </div>
 
     <div class="footer-bottom">
@@ -343,7 +351,7 @@
 
 
 
-
+<script src="main.js"></script>
 
 </body>
 </html>
